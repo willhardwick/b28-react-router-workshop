@@ -1,4 +1,4 @@
-*{ font-family: arial, sans-serif;
+*{
   margin: 0;
 }
 
@@ -19,9 +19,33 @@ body > div {
 }
 
 #navbar {
+  font-family: monospace;
   padding: 2em;
+  display: flex;
   justify-content: space-evenly;
+  margin-bottom: .5em;
 }
+
+#navbar a:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#navbar>#home-click {
+    color: rgb(67, 158, 67);
+  }
+
+#navbar>#blue-click {
+    color: #275db3;
+  }
+
+#navbar>#red-click {
+    color: #c5324a;
+  }
+
+
+/* inherit keeps the default text color
+text-decoration removes the underline */
+
 
 #main-section {
   flex-grow: 1;
@@ -35,17 +59,24 @@ body > div {
 }
 
 .red {
+  font-family: monospace;
   background-color: #c5324a;
   color: white;
 }
 
 .blue {
+  font-family: monospace;
   background-color: #275db3;
   color: white;
 }
 
 .home {
+  font-family: monospace;
   background-color: rgb(67, 158, 67);
   color: white;
+}
 
+.header {
+  font-family: monospace;
+  margin-bottom: .5em;
 }
